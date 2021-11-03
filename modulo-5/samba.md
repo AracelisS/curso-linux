@@ -157,7 +157,10 @@ Y reiniciamos el servicio con:
 ```bash
 sudo systemctl restart smbd.service
 ```
-
+*Tenemos que habilitar el firewall*
+```bash
+sudo ufw allow samba
+```
 Para conectarnos a la carpeta desde linux, abrimos un explorador de archivos y al final de la izquierda saldrá red, entramos y ya estaremos en la carpeta
 
 Para entrar desde windows tendremos que presionar windows + r y poner: \\ip-servidor\nombre-de-usuario
@@ -173,5 +176,7 @@ Y para conectarnos desde MacOS damos click derecho a finder damos a conectar con
 [^2]: Network Basic Input/Output System
 
 [^3]: Pequeño programa para captura de tráfico de datos en red
+
+
 
 
