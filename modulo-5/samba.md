@@ -19,9 +19,7 @@
   
 
 ```html
-
 <h1>Hola</h1>
-
 ```
 
   
@@ -38,37 +36,25 @@
 
   
 
-> Este manual esta dirigido a los vagos
+> Este manual esta dirigido a para las personas que necesitaran ayuda para la configuracion de dicho programa...
 
   
 
 ***Creditos:***
 
   
+A Aracelis Severino por su búsqueda en Internet uyyyyy.
 
-A mi esfuerzo exhaustivo de búsqueda de Internet hehe.
-
-  
-
-*Este manual es incomparable y esto es un perro 🐕*
-
-  
 
 ```bash
-
 $ sudo xd
-
 ```
-
-  
 
 ## Introduccion
 
 ### ¿Que es SAMBA?
 
-Es un conjunto de aplicaciones Linux, basada en el protocolo SMB[^1], que permite compartir archivos en red.
-
-  
+Es un conjunto de aplicaciones Linux, basada en el protocolo SMB, que permite compartir archivos en red.
 
 ### Orígenes
 
@@ -76,9 +62,9 @@ Fue creado por [Andrew Tridgell](https://es.wikipedia.org/wiki/Andrew_Tridgell  
 
 El necesitaba montar un espacio en disco en su computadora para un servidor Unix.
 
-Esa computadora utilizaba el sistema de archivos **NFS** (*Network File System*). Sin embargo, una aplicación necesitaba soporte para el protocolo **NetBIOS[^2]** (no soportado por el NFS).
+Esa computadora utilizaba el sistema de archivos **NFS** (*Network File System*). Sin embargo, una aplicación necesitaba soporte para el protocolo **NetBIOS** (no soportado por el NFS).
 
-Tridgell lo solucionó escribiendo un sniffer[^3] que permitía analizar el tráfico de datos generado por el protocolo NetBIOS. Hizo [ingeniería inversa](https://es.wikipedia.org/wiki/Ingenier%C3%ADa_inversa  "https://es.wikipedia.org/wiki/Ingeniería_inversa") en el protocolo SMB y lo implementó en el Unix.
+Tridgell lo solucionó escribiendo un sniffer que permitía analizar el tráfico de datos generado por el protocolo NetBIOS. Hizo [ingeniería inversa](https://es.wikipedia.org/wiki/Ingenier%C3%ADa_inversa  "https://es.wikipedia.org/wiki/Ingeniería_inversa") en el protocolo SMB y lo implementó en el Unix.
 
   
 
@@ -169,13 +155,16 @@ Y para conectarnos desde MacOS damos click derecho a finder damos a conectar con
 
 ## Desinstalacion
 
-  
+ * Este comando eliminará todo el paquete, junto con los archivos de configuración, que apt-get remove samba no lo hará.  *
+```bash
+sudo apt purge samba samba-common
+```
 
-[^1]: Server Message Block
+ 1. Server Message Block
 
-[^2]: Network Basic Input/Output System
+ 2. Network Basic Input/Output System
 
-[^3]: Pequeño programa para captura de tráfico de datos en red
+ 3. Pequeño programa para captura de tráfico de datos en red
 
 
 
